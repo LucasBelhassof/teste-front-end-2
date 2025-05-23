@@ -2,12 +2,10 @@
   <div id="app">
     <FormUser @updateUser="updateUser" />
     <div class="cards-row">
-      <!-- Card Amarelo -->
       <UserCard
         :user="user"
         :fixedColor="'#ECB117'"
       />
-      <!-- Card Vinho -->
       <UserCard
         :user="user"
         :fixedColor="'#9B0021'"
@@ -73,7 +71,6 @@ export default {
   margin-top: 32px;
 }
 
-/* Adicione este trecho para responsividade mobile */
 @media (max-width: 600px) {
   .cards-row {
     flex-direction: column;
