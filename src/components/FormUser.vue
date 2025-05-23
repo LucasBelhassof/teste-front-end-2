@@ -76,19 +76,21 @@ export default {
 <style>
 .user-form {
     display: flex;
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column; /* Deixa tudo em coluna */
+    align-items: center;
+    gap: 16px;
     border: 2px solid #e0e4e8;
     padding: 20px;
     border-radius: 6px;
     background: #fff;
-    width: fit-content;
-    margin: 40px auto; /* Centraliza na tela */
+    width: 320px; /* ou ajuste conforme desejar */
+    margin: 40px auto;
 }
 .photo-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 .photo-preview {
     width: 120px;
@@ -105,11 +107,15 @@ export default {
     border-radius: 2px;
     cursor: pointer;
     font-weight: bold;
+    width: 100%;
+    margin-bottom: 10px;
 }
 .fields {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: stretch;
+    width: 100%;
 }
 .fields label {
     font-size: 14px;
@@ -120,24 +126,12 @@ export default {
     border: 1px solid #ccc;
     border-radius: 2px;
     font-size: 15px;
+    width: 100%;
 }
 .color-buttons {
     display: flex;
     align-items: center;
     gap: 16px;
     margin-top: 10px;
-}
-.color-btn {
-    width: 36px;
-    height: 20px;
-    border-radius: 2px;
-    cursor: pointer;
-    outline: none;
-    border: 2px solid #ccc;
-    padding: 0;
-    transition: border 0.2s;
-}
-.color-btn.selected {
-    border: 2px solid #333;
 }
 </style>
